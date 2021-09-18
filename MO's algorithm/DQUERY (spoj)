@@ -110,6 +110,13 @@ bool comp(query a, query b){
     return a.r < b.r;
 }
 
+//another comp function this is better than that ..
+/*
+bool comp(Query A, Query B){
+  if (A.l / S ！= B.l / S) return A.l < B.l;
+  return A.l / S % 2 ? A.r > B.r : A.r < B.r;
+}
+*/
 void add(int pos){
     if(fre[ar[pos]] == 0)cnt++;
     fre[ar[pos]]++;
