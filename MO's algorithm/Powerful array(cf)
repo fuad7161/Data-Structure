@@ -123,6 +123,13 @@ bool comp(query a , query b){
 	if(a.l / block != b.l / block)return a.l / block < b.l / block;
 	return a.r < b.r;
 }
+/*
+optimal...
+bool comp(query a, query b){
+	if(a.first / blk != b.first / blk)return a.first < b.first;
+	return (a.first/ blk &1)?(a.second < b.second):(a.second>b.second);
+}
+*/
 
 int solve() 
 {
